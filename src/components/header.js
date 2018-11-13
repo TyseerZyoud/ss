@@ -1,15 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-// const googleTranslateElementInit = () =>
-//   new google.translate.TranslateElement(
-//     {
-//       pageLanguage: 'en',
-//       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-//     },
-//     'google_translate_element'
-//   )
-
 const Header = ({ siteTitle }) => (
   <div
     style={{
@@ -35,21 +26,6 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <div style={{ height: 200, width: 200, backgroundColor: 'orange' }}>
-        <div id="google_translate_element" />
-        <script
-          type="text/javascript"
-          src="//translate.google.com/translate_a/element.js?cb={() => {
-          new google.translate.TranslateElement(
-            {
-              pageLanguage: 'en',
-              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            },
-            'google_translate_element'
-          )
-        }}"
-        />
-      </div>
     </div>
   </div>
 )
